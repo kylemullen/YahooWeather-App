@@ -1,0 +1,20 @@
+<h1>Current Weather in Chicago</h1>
+
+<h3>Conditions: <%= @chicago.condition.text %> </h3>
+
+<img src="<%= @chicago.image.url %>"/>
+
+<h3>Temperature-Fahrenheit: <%= @chicago.condition.temp %></h3>
+<h3>Temperature-Celsius: <%= @celsius %> </h3>
+
+<h4> 3 Day Forecast </h4>
+
+<% @chicago.forecasts[0..2].each do |forecast| %>
+	<p> <%= forecast.day %> </p>
+
+
+
+
+
+<% end %>
+
